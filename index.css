@@ -1,0 +1,220 @@
+body {
+    background-color: #2d3e50;
+}
+
+.clicked {
+    color: #7f8c8d;
+}
+
+.form,
+.grettings {
+    display : none;
+}
+
+.showing {
+    font-size: 30px;
+    text-shadow: 2px 2px 2px gray;
+    color: #fff;
+    display : block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+/* GENERAL BUTTON STYLING */
+Button {
+	-moz-box-shadow:inset 0px 0px 0px 0px #a4e271;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #a4e271;
+	box-shadow:inset 0px 0px 0px 0px #a4e271;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #89c403), color-stop(1, #77a809));
+	background:-moz-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-webkit-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-o-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-ms-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c403', endColorstr='#77a809',GradientType=0);
+	background-color:#89c403;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+    padding:4px 8px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+}
+Button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77a809), color-stop(1, #89c403));
+	background:-moz-linear-gradient(top, #77a809 5%, #89c403 100%);
+	background:-webkit-linear-gradient(top, #77a809 5%, #89c403 100%);
+	background:-o-linear-gradient(top, #77a809 5%, #89c403 100%);
+	background:-ms-linear-gradient(top, #77a809 5%, #89c403 100%);
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77a809', endColorstr='#89c403',GradientType=0);
+	background-color:#77a809;
+}
+Button:active {
+	position:relative;
+    top:1px;
+}
+
+span {
+    padding: 15px;
+}
+
+time {
+    font-size: 15px;
+    text-shadow: 2px 2px 2px gray;
+    color: #fff
+}
+.js-toDoList{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 2px gray;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff
+}
+
+.js-weather {
+    font-size: 20px;
+    text-shadow: 2px 2px 2px gray;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    color: #fff
+}
+
+.js-reset {
+    font-size: 20px;
+    text-shadow: 2px 2px 2px gray;
+    float: right;
+    position: relative;
+    right: 15px;
+    cursor: pointer;
+    color: #fff 
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.container .js-clock {
+    font-size: 45px;
+    color: #fff;
+    text-shadow: 3px 3px 3px gray;
+}
+
+.js-form {
+    position: relative;
+    top: -15px;
+    margin-bottom: 30px;
+}
+
+.js-form input{
+    height: auto;
+    line-height: normal;
+    -webkit-appearance: none;
+    padding: 10px 15px;
+    text-align: center;
+    background-color: transparent;
+    border: 0px;
+    color: white;
+    border-bottom: 1px solid ;
+}
+
+.js-form input:focus{
+    outline: none;
+}
+
+.js-form input::placeholder,
+.js-form input::-webkit-input-placeholder{
+    font-weight: bold;
+    font-size: 17px;
+    color:#fff;
+}
+
+.js-toDoForm input {
+    height: auto;
+    line-height: normal;
+    -webkit-appearance: none;
+    text-align: center;
+    padding: 10px 15px;
+    border: 0px;
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid ;
+}
+
+.js-toDoForm input::placeholder,
+.js-toDoForm input::-webkit-input-placeholder{
+    font-weight: bold;
+    font-size: 18px;
+    color:#fff;
+}
+
+.js-toDoForm input:focus{
+    outline: none;
+}
+
+input:focus::-webkit-input-placeholder { 
+    color: transparent;
+} input:focus::-moz-placeholder { 
+    color: transparent;
+} input:focus:-ms-input-placeholder { 
+    color: transparent; 
+} 
+input:focus::-ms-input-placeholder { 
+    color: transparent;
+}
+
+.copyright {
+    display: table;
+    font-size: 18px;
+    color: #fff;
+    text-align:center; 
+    vertical-align:bottom; 
+    text-decoration:none;
+    font-size:15px;
+    color:#fff;
+    border:1px solid #fff;
+    width:100px;
+    height:35px; 
+    line-height:35px;
+    position:absolute;
+    bottom: 3%;
+}
+
+.copycontainer {
+    width:100px;
+    position:fixed;
+    left:50%;
+    margin-left:-50px;
+    bottom: 3%;
+}
